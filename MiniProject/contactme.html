@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/contactme.css">
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <div class="container">
+
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required autocomplete="off">
+            <span class="error-message" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="on">
+            <span class="error-message" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" autocomplete="off">
+            <span class="error-message" id="phone-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <span class="error-message" id="message-error"></span>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      
+    </div>
+      <script src="JS/contactme.js"></script>
+</body>
+</html>

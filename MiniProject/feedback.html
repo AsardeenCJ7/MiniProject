@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Comment/Feedback Forum</title>
+    <link rel="stylesheet" href="CSS/feedback.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Feedback Forum</h1>
+    </header>
+    <div id="app">
+      <form v-on:submit.prevent="addComment">
+        <label for="name">Name:</label>
+        <input type="text" id="name" v-model="newComment.name" autocomplete="off">
+        <label for="comment">Comment:</label>
+        <textarea id="comment" v-model="newComment.comment"></textarea>
+        <button type="submit" onclick="msg()">Submit</button>
+      </form>
+      <ul>
+        <li v-for="(comment, index) in comments" :key="index">
+          <p><strong>{{ comment.name }}:</strong> {{ comment.comment }}</p>
+          <button class="delete" v-on:click="deleteComment(index)">Delete</button>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      &copy; 2023 LightUpYourLife Comments Forum
+    </footer>
+
+  <script src="JS/feedback.js"></script>
+  <script>
+    function msg()
+    {
+      alert("Thank You for Your Valuable Feedback");
+    }
+  </script>
+</body>
+</html>

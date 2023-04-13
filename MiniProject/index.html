@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightUpYourLife</title>
+    <link rel="stylesheet" href="/CSS/home.css">
+  
+
+    
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <img src="/images/menu.png" alt="" class="menu-image">
+            <img src="/images/logo.png" alt="" class="menu-logo">
+            <ul>
+                <li><a href="index.html" class="home-active">Home</a></li>
+                <li><a href="aboutme.html">AboutMe</a></li>
+                <li><a href="gallery.html">MyGallery</a></li>
+                <li><a href="contactme.html">ContactMe</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="image-container">
+            <img src="images/lamp.png" alt="" class="lamp">
+            <img src="images/light.png" alt="" id="light" class="light" onclick="toggleBtn()">
+        </div>
+
+        <div class="text-container">
+            <h1>LightUpYourLife</h1>
+            
+          <h1><span id="animate"></span></h1>
+            <p>Engaging in hobbies and interests can have a positive impact on your future. Hobbies allow you to participate in activities that you enjoy and find fulfilling. 
+                These activities can improve your mental health by reducing stress, boosting your mood, and providing a sense of purpose and accomplishment.
+                <span style="color:#00986f; font-weight: 400; font-size: 20px;">as a light-lamp brightens a room,</span> hobbies and interests can bring brightness to your life and enhance your overall well-being.</p>
+                <a href="gallery.html">Check All Collections</a>
+
+                
+                <div class="control">
+                    <p>01</p>
+                    <div class="line"><span></span></div>
+                    <p>02</p>
+                </div>
+            </div>
+    </div>
+
+
+
+<script src="JS/home.js"></script>
+<!-- Auto typed Start -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+var typed = new Typed("#animate",{
+    strings:["HOBBIES", "INTERESTS", "COLLECTIONS","SPORTS","TRAVELLING"],
+    typeSpeed: 150,
+    backSpeed:150,
+    loop:true
+        })
+
+    </script>
+<!-- Auto typed End  -->
+    
+</body>
+</html>
